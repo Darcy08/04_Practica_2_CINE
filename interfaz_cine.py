@@ -12,7 +12,7 @@ fecha = StringVar()
 idioma = StringVar()
 
 
-def crear_sala():
+def crear_cartelera():
     pelicula = entry_pelicula.get()
     hora = entry_hora.get()
     fecha = entry_fecha.get()
@@ -67,7 +67,7 @@ entry_idioma = Entry(frame_food, justify=LEFT, width=30, font=("Calibri", "14", 
 entry_idioma.place(x=20, y=310)
 
 
-button_agregar = Button(frame_food, text="Cartelera", command=crear_sala, font=("Calibri", "14", "bold"))
+button_agregar = Button(frame_food, text="Crear cartelera", command=crear_cartelera, font=("Calibri", "14", "bold"))
 button_agregar.place(x=20, y=350)
 
 title = Label(frame_navbar, text="CINE LOVE",
